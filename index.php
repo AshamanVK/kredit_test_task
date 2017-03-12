@@ -34,7 +34,7 @@
               </div>
 
               <div class="form-item">
-                <label>Текст сообщения <span class="req">*</span></label>
+                <label>Текст обращения <span class="req">*</span></label>
                 <textarea id="message" rows="4" name="message" required></textarea>
               </div>
 
@@ -53,7 +53,10 @@
         <div class="col col-3"><b>Сообщение</b></div>
       </div>
 
-      <?php include "includes/get_data.php"; ?>
+      <div id="tickets">
+        <?php include "includes/get_data.php"; ?>
+      </div>
+
 
     </div>
   </div>

@@ -24,7 +24,7 @@ textarea {
 }
 
 .table_header {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   b {
     font-weight: 700;
   }
@@ -34,4 +34,6 @@ textarea {
   margin-bottom: 20px;
 }
 
-  
+#tickets > .item:nth-child(odd) {
+  background-color: lightgray;
+}

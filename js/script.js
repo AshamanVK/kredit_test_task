@@ -20,8 +20,10 @@ jQuery(document).ready(function($) {
           // alert("Data Save: " + data);
         }
       }).done(function () {
-          // alert("asdasd");
-          // Here I want to get the how long it took to load some.php and use it further
+          $("#theme").val("");
+          $("#message").val("");
+          $("#add_call_modal .close").trigger('click');
+          $("#tickets").load("includes/get_data.php")
       });
    
     }

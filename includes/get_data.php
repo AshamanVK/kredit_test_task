@@ -28,7 +28,7 @@
   if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<div class='row'>";
+        echo "<div class='row item'>";
         echo "<div class='col col-3'>".$row["reg_date"]."</div>";
         echo "<div class='col col-3'>".$row["theme"]."</div>";
         echo "<div class='col col-3'>".$row["message"]."</div>";
