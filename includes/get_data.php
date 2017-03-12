@@ -20,19 +20,23 @@
   message TEXT NOT NULL,
   reg_date TIMESTAMP
   )";
+  $conn->query($sql);
 
+  $sql = "SELECT reg_date, theme, message FROM Tickets";
+  $result = $conn->query($sql);
 
-  // $sql = "SELECT id, firstname, lastname FROM Tickets";
-  // $result = $conn->query($sql);
-
-  // if ($result->num_rows > 0) {
-  //   // output data of each row
-  //   while($row = $result->fetch_assoc()) {
-  //       echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-  //   }
-  // } else {
-  //   echo "0 results";
-  // }
+  if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<div class='row'>";
+        echo "<div class='col col-3'>".$row["reg_date"]."</div>";
+        echo "<div class='col col-3'>".$row["theme"]."</div>";
+        echo "<div class='col col-3'>".$row["message"]."</div>";
+        echo "</div>";
+    }
+  } else {
+    echo "нет тикетов";
+  }
   $conn->close();
 
 
