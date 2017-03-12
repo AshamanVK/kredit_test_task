@@ -6,3 +6,30 @@
 @import "compass/reset";
 @import "../dist/scss/kube.scss";
 
+@mixin transition($time) {
+  -webkit-transition: all $time;
+     -moz-transition: all $time;
+      -ms-transition: all $time;
+       -o-transition: all $time;
+          transition: all $time;
+}
+
+
+button {
+  @include transition(0.2s);
+}
+
+textarea {
+  resize: none;
+}
+
+.table_header {
+  border-bottom: 1px solid black;
+  b {
+    font-weight: 700;
+  }
+}
+
+.add_call__button {
+  margin-bottom: 20px;
+}
