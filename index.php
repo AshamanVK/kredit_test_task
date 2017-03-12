@@ -7,8 +7,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Compiled scss file -->
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
   <!-- Kube CSS -->
-  <link rel="stylesheet" href="assets/css/kube.css">
+  <link rel="stylesheet" href="dist/css/kube.css">
 
 </head>
 <body>
@@ -18,7 +21,7 @@
 
   <!-- Kube JS + jQuery are used for some functionality, but are not required for the basic setup -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="assets/js/kube.js"></script>
+  <script src="dist/js/kube.js"></script>
 
 </body>
 </html>
